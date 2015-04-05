@@ -1,3 +1,7 @@
+# Tarantool
+*.snap
+*.xlog
+
 # Compiled Lua sources
 luac.out
 
