@@ -1,4 +1,4 @@
-#!/usr/bin/tarantool
+#!/usr/bin/env tarantool
 
 box.cfg{ slab_alloc_arena = 0.1 }
 space = box.space.links
@@ -68,7 +68,6 @@ local function htmlspecialchars(str)
 end
 
 log = require('log')
-dump = require('dump')
 
 function shortener_handler(req)
 	local url = req:param('url')
